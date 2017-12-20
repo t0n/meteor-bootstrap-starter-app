@@ -1,0 +1,18 @@
+<template name="index">
+    <div class="container-fluid">
+        <h1>Items</h1>
+        <hr/>
+        <div class="add-items">
+            <form>
+                <div class="form-group">
+                    <input type="text" name="text" class="form-control" placeholder="Input your item here..." />
+                </div>
+            </form>
+        </div>
+        <ul>
+            {{#each items}}
+                {{> items_list_item}}
+            {{/each}}
+        </ul>
+    </div>
+</template>
